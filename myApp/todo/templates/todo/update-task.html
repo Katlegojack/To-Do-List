@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #2c3e50;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: rgba(17, 255, 0, 0.873);
+            text-shadow: 2px 2px red;
+            background-color: #2c3e50;
+            margin: 0;
+            padding: 10px 0;
+        }
+        .task-box {
+            background-color: rgba(9, 168, 23, 0.428);
+            border: 2px solid #34495e;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Update Task</h1>
+    <div class="task-box">
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ TaskForm }}
+            <input class="btn" type="submit" name="Update Task">
+        </form>
+    </div>
+</body>
+</html>
