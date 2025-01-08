@@ -1,2 +1,2 @@
 # To-Do-List
-Python Django + HTML + CSS project
+Django+ Templates + CSS project.
